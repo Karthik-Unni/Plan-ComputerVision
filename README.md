@@ -1,9 +1,8 @@
-# Team 2 — Computer Vision & Detection
+# Computer Vision & Detection
 
-Standalone deliverable for Team 2's scope from the product plan:
 Image Preprocessing → Architectural CV. This does **not** include geometry
-cleanup, BIM semantics, 3D, or export — those are Teams 3/4/5. This package
-runs independently and outputs exactly the JSON handoff Team 3 consumes.
+cleanup, BIM semantics, 3D, or export . This package
+runs independently and outputs exactly the JSON handoff .
 
 ## What's implemented
 
