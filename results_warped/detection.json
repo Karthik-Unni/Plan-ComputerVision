@@ -1,0 +1,546 @@
+{
+  "source_image": "sample_floorplan_warped.png",
+  "deskew_angle_deg": 0.0,
+  "perspective_correction": {
+    "applied": true,
+    "confidence": 0.575,
+    "corners_px": [
+      [
+        195.0,
+        150.0
+      ],
+      [
+        864.0,
+        149.0
+      ],
+      [
+        1038.0,
+        770.0
+      ],
+      [
+        21.0,
+        770.0
+      ]
+    ]
+  },
+  "walls": [
+    {
+      "id": "wall_000",
+      "centerline": [
+        [
+          111.0,
+          325.0
+        ],
+        [
+          781.0,
+          318.0
+        ]
+      ],
+      "thickness_px": 12,
+      "confidence": 0.985
+    },
+    {
+      "id": "wall_001",
+      "centerline": [
+        [
+          110.0,
+          548.0
+        ],
+        [
+          910.0,
+          549.0
+        ]
+      ],
+      "thickness_px": 18,
+      "confidence": 0.985
+    },
+    {
+      "id": "wall_002",
+      "centerline": [
+        [
+          111.0,
+          91.0
+        ],
+        [
+          909.0,
+          97.0
+        ]
+      ],
+      "thickness_px": 4,
+      "confidence": 0.99
+    },
+    {
+      "id": "wall_003",
+      "centerline": [
+        [
+          334.0,
+          1.0
+        ],
+        [
+          1016.0,
+          1.0
+        ]
+      ],
+      "thickness_px": 4,
+      "confidence": 0.99
+    },
+    {
+      "id": "wall_004",
+      "centerline": [
+        [
+          508.0,
+          326.0
+        ],
+        [
+          909.0,
+          321.0
+        ]
+      ],
+      "thickness_px": 12,
+      "confidence": 0.99
+    },
+    {
+      "id": "wall_005",
+      "centerline": [
+        [
+          3.0,
+          0.0
+        ],
+        [
+          0.0,
+          643.0
+        ]
+      ],
+      "thickness_px": 4,
+      "confidence": 0.99
+    },
+    {
+      "id": "wall_006",
+      "centerline": [
+        [
+          120.0,
+          93.0
+        ],
+        [
+          110.0,
+          553.0
+        ]
+      ],
+      "thickness_px": 4,
+      "confidence": 0.99
+    },
+    {
+      "id": "wall_007",
+      "centerline": [
+        [
+          1015.0,
+          2.0
+        ],
+        [
+          1016.0,
+          599.0
+        ]
+      ],
+      "thickness_px": 4,
+      "confidence": 0.99
+    },
+    {
+      "id": "wall_008",
+      "centerline": [
+        [
+          899.0,
+          94.0
+        ],
+        [
+          905.0,
+          557.0
+        ]
+      ],
+      "thickness_px": 4,
+      "confidence": 0.985
+    },
+    {
+      "id": "wall_009",
+      "centerline": [
+        [
+          608.0,
+          327.0
+        ],
+        [
+          909.0,
+          322.0
+        ]
+      ],
+      "thickness_px": 14,
+      "confidence": 0.99
+    },
+    {
+      "id": "wall_010",
+      "centerline": [
+        [
+          113.0,
+          205.0
+        ],
+        [
+          112.0,
+          309.0
+        ]
+      ],
+      "thickness_px": 20,
+      "confidence": 0.99
+    },
+    {
+      "id": "wall_011",
+      "centerline": [
+        [
+          901.0,
+          557.0
+        ],
+        [
+          900.0,
+          385.0
+        ]
+      ],
+      "thickness_px": 20,
+      "confidence": 0.99
+    },
+    {
+      "id": "wall_012",
+      "centerline": [
+        [
+          515.0,
+          94.0
+        ],
+        [
+          505.0,
+          326.0
+        ]
+      ],
+      "thickness_px": 14,
+      "confidence": 0.955
+    },
+    {
+      "id": "wall_013",
+      "centerline": [
+        [
+          731.0,
+          319.0
+        ],
+        [
+          739.0,
+          557.0
+        ]
+      ],
+      "thickness_px": 4,
+      "confidence": 0.97
+    },
+    {
+      "id": "wall_014",
+      "centerline": [
+        [
+          899.0,
+          319.0
+        ],
+        [
+          899.0,
+          380.0
+        ]
+      ],
+      "thickness_px": 22,
+      "confidence": 0.888
+    },
+    {
+      "id": "wall_015",
+      "centerline": [
+        [
+          346.0,
+          326.0
+        ],
+        [
+          736.0,
+          320.0
+        ]
+      ],
+      "thickness_px": 12,
+      "confidence": 0.99
+    },
+    {
+      "id": "wall_016",
+      "centerline": [
+        [
+          130.0,
+          367.0
+        ],
+        [
+          201.0,
+          415.0
+        ]
+      ],
+      "thickness_px": 8,
+      "confidence": 0.836
+    },
+    {
+      "id": "wall_017",
+      "centerline": [
+        [
+          111.0,
+          367.0
+        ],
+        [
+          111.0,
+          319.0
+        ]
+      ],
+      "thickness_px": 20,
+      "confidence": 0.86
+    },
+    {
+      "id": "wall_018",
+      "centerline": [
+        [
+          358.0,
+          87.0
+        ],
+        [
+          195.0,
+          96.0
+        ]
+      ],
+      "thickness_px": 14,
+      "confidence": 0.99
+    },
+    {
+      "id": "wall_019",
+      "centerline": [
+        [
+          909.0,
+          142.0
+        ],
+        [
+          901.0,
+          209.0
+        ]
+      ],
+      "thickness_px": 14,
+      "confidence": 0.925
+    },
+    {
+      "id": "wall_020",
+      "centerline": [
+        [
+          757.0,
+          552.0
+        ],
+        [
+          835.0,
+          552.0
+        ]
+      ],
+      "thickness_px": 12,
+      "confidence": 0.96
+    },
+    {
+      "id": "wall_021",
+      "centerline": [
+        [
+          143.0,
+          357.0
+        ],
+        [
+          201.0,
+          357.0
+        ]
+      ],
+      "thickness_px": 8,
+      "confidence": 0.893
+    },
+    {
+      "id": "wall_022",
+      "centerline": [
+        [
+          429.0,
+          318.0
+        ],
+        [
+          457.0,
+          318.0
+        ]
+      ],
+      "thickness_px": 18,
+      "confidence": 0.793
+    }
+  ],
+  "doors": [
+    {
+      "id": "door_001",
+      "type": "door",
+      "wall_id": "wall_000",
+      "position_px": {
+        "x": 248.20478325859492,
+        "y": 323.56651718983557
+      },
+      "width_px": 32.0,
+      "confidence": 0.55
+    },
+    {
+      "id": "door_002",
+      "type": "door",
+      "wall_id": "wall_001",
+      "position_px": {
+        "x": 705.7446808510639,
+        "y": 548.7446808510638
+      },
+      "width_px": 48.0,
+      "confidence": 0.55
+    },
+    {
+      "id": "door_004",
+      "type": "door",
+      "wall_id": "wall_008",
+      "position_px": {
+        "x": 901.5714285714286,
+        "y": 292.42857142857144
+      },
+      "width_px": 25.0,
+      "confidence": 0.55
+    },
+    {
+      "id": "door_005",
+      "type": "door",
+      "wall_id": "wall_012",
+      "position_px": {
+        "x": 512.3593073593073,
+        "y": 155.26406926406926
+      },
+      "width_px": 24.0,
+      "confidence": 0.55
+    },
+    {
+      "id": "door_006",
+      "type": "door",
+      "wall_id": "wall_013",
+      "position_px": {
+        "x": 734.6793248945148,
+        "y": 428.4599156118143
+      },
+      "width_px": 20.0,
+      "confidence": 0.55
+    }
+  ],
+  "windows": [
+    {
+      "id": "window_003",
+      "type": "window",
+      "wall_id": "wall_001",
+      "position_px": {
+        "x": 748.7984981226533,
+        "y": 548.7984981226533
+      },
+      "width_px": 13.0,
+      "confidence": 0.5
+    }
+  ],
+  "columns": [
+    {
+      "id": "column_012",
+      "bbox_px": [
+        783.0,
+        415.0,
+        15.0,
+        9.0
+      ],
+      "fixture_class": "fixture",
+      "confidence": 0.35
+    },
+    {
+      "id": "column_013",
+      "bbox_px": [
+        769.0,
+        415.0,
+        14.0,
+        9.0
+      ],
+      "fixture_class": "fixture",
+      "confidence": 0.35
+    },
+    {
+      "id": "column_015",
+      "bbox_px": [
+        248.0,
+        415.0,
+        16.0,
+        8.0
+      ],
+      "fixture_class": "fixture",
+      "confidence": 0.35
+    },
+    {
+      "id": "column_016",
+      "bbox_px": [
+        228.0,
+        415.0,
+        19.0,
+        9.0
+      ],
+      "fixture_class": "fixture",
+      "confidence": 0.35
+    },
+    {
+      "id": "column_046",
+      "bbox_px": [
+        491.0,
+        73.0,
+        9.0,
+        6.0
+      ],
+      "fixture_class": "fixture",
+      "confidence": 0.35
+    },
+    {
+      "id": "column_050",
+      "bbox_px": [
+        461.0,
+        71.0,
+        19.0,
+        8.0
+      ],
+      "fixture_class": "fixture",
+      "confidence": 0.35
+    },
+    {
+      "id": "column_051",
+      "bbox_px": [
+        452.0,
+        71.0,
+        8.0,
+        8.0
+      ],
+      "fixture_class": "fixture",
+      "confidence": 0.35
+    },
+    {
+      "id": "column_052",
+      "bbox_px": [
+        335.0,
+        0.0,
+        682.0,
+        599.0
+      ],
+      "fixture_class": "fixture",
+      "confidence": 0.35
+    }
+  ],
+  "stairs": [
+    {
+      "id": "stair_000",
+      "bbox_px": [
+        229.0,
+        168.0,
+        454.0,
+        24.0
+      ],
+      "confidence": 0.55
+    }
+  ],
+  "texts": []
+}

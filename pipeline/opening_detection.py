@@ -93,6 +93,12 @@ def detect_columns_and_fixtures(binary: np.ndarray, min_area=30, max_area=900):
     T2.5 - small, roughly-square blobs that aren't part of long wall runs
     are flagged as candidate columns/fixtures. Coarse heuristic; a trained
     classifier should replace this for production-grade fixture typing.
+
+    Each candidate now carries a `fixture_class` field with a best-guess
+    label based on bounding-box size and aspect ratio. Known limitation:
+    this heuristic cannot reliably distinguish a structural column from a
+    plumbing fixture — labels are low-confidence suggestions flagged for
+    human review. Do not over-rely on fixture_class without validation.
     """
     contours, _ = cv2.findContours(binary, cv2.RETR_LIST, cv2.CHAIN_APPROX_SIMPLE)
     candidates = []
@@ -102,10 +108,25 @@ def detect_columns_and_fixtures(binary: np.ndarray, min_area=30, max_area=900):
             continue
         x, y, w, h = cv2.boundingRect(c)
         aspect = w / h if h else 0
-        if 0.6 <= aspect <= 1.6:  # roughly square -> more likely a column
+        # Outer gate widened to 0.3–3.0 so tall-narrow and wide-short
+        # fixture sub-cases are actually reachable (previous 0.6–1.6 gate
+        # made the aspect < 0.6 and aspect > 1.8 branches dead code).
+        if 0.3 <= aspect <= 3.0:
+            # Heuristic fixture typing by size + aspect.
+            # Cannot distinguish column from fixture without a trained model;
+            # these labels are best-guess only — flagged for human review.
+            if area > 300 and 0.8 <= aspect <= 1.25:
+                fixture_class = "column"       # larger, very square → structural column
+            elif aspect < 0.6:
+                fixture_class = "fixture"      # tall-narrow → possibly toilet / door stop
+            elif aspect > 1.8:
+                fixture_class = "fixture"      # wide-short → possibly sink
+            else:
+                fixture_class = "fixture"      # generic; cannot type reliably
             candidates.append({
                 "id": f"column_{i:03d}",
                 "bbox_px": [float(x), float(y), float(w), float(h)],
+                "fixture_class": fixture_class,
                 "confidence": 0.35,
             })
     return candidates
